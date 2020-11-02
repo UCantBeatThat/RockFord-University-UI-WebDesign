@@ -1,0 +1,19 @@
+<div>
+    <h3 style="color: #084B5B; font-weight: bold; text-align: center; text-transform: uppercase;">Faculty Details</h3>
+</div>
+
+<div *ngFor="let faculty of faculty_list" (click)="onFacultyClick($event, faculty)"
+    style="width: 15%; display: inline-block; margin: 2% 0.6%; cursor: pointer;">
+    <img src={{faculty.faculty_img_url}} style="width: 100%;"/>
+</div>
+<br>
+<br>
+<div style="margin-bottom: 10%">
+    <div style="text-align: center; margin: 0 auto">
+        <span>( Click on the faculty thumbnail to display the faculty details )</span>
+        <div id="faculty_details">
+
+        </div>
+    </div>
+    
+</div>

@@ -1,0 +1,22 @@
+.nav-item>a{
+    background-color: #ffffff;
+    color: #084B5B;
+    font-weight: bold;
+    margin: 10px 10px;
+    border-radius: 5px;
+}
+
+.nav-item:hover>a{
+    background-color: #084B5B;
+    color: #ffffff;
+}
+
+#nav-tabs{
+    background-color: #ffffff; 
+    padding: 10px; 
+    border-radius: 5px;
+}
+
+.nav-tabs{
+    margin-bottom: 5px;
+}

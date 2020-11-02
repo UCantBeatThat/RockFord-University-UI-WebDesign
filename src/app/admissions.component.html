@@ -1,0 +1,38 @@
+<style>
+    .form-group, .btn{
+        width: 60% !important;
+        margin: 20px auto;
+    }
+</style>
+
+<div>
+    <h3 style="color: #084B5B; font-weight: bold; text-align: center; text-transform: uppercase;">Register for a Course</h3>
+</div>
+<div>
+    <form>
+        <div class="form-group">
+            <input type="text" class="form-control" formControlName="fullname" required id="fullName" #inputFullName
+                placeholder="Full Name: John Doe" required>
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" formControlName="username" required
+                placeholder="E-mail ID: name@example.com" required>
+        </div>
+        <div class="form-group">
+            <input type="date" class="form-control" formControlName="userdob" required
+                placeholder="DOB: DD/MM/YYYY" required>
+        </div>
+        <div class="form-group">
+            <select class="form-control">
+                <option selected disabled>----- Select Course -----</option>
+                <option value="B Tech Chemical Engineering">B Tech Chemical Engineering</option>
+                <option value="B Tech Civil Engineering">B Tech Civil Engineering</option>
+                <option value="B Tech Computer Science & Engineering">B Tech Computer Science & Engineering</option>
+                <option value="B Tech Computer and Communication Engineering">B Tech Computer and Communication Engineering</option>
+                <option value="B Tech Data Science & Engineering">B Tech Data Science & Engineering</option>
+                <option value="B Tech Electrical & Electronics Engineering">B Tech Electrical & Electronics Engineering</option>
+            </select>
+        </div>
+        <button type="button" class="btn btn-primary btn-block" (click)="onFormSubmit(inputFullName.value)">Login</button>
+    </form>
+</div>

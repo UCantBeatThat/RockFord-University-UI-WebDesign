@@ -1,0 +1,35 @@
+<style>
+    div > h4, div > p#dept_name{
+        font-weight: bold;
+        color: #f5720f;
+    }
+
+    div span{
+        font-weight: bold;
+    }
+
+    #courses_list_1{
+        padding: 3% 2%;
+        border-bottom: 1px solid #000000;
+    }
+</style>
+
+<div>
+    <h3 style="color: #084B5B; font-weight: bold; text-align: center;">PROGRAMS/COURSES - 2020-21</h3>
+</div>
+<div *ngFor="let course of courses_list" id="courses_list_1">
+    <h4>
+        {{course.course_name}}
+    </h4>
+    <p id="dept_name">
+        <strong>
+            {{course.department_name}}
+        </strong>
+    </p>
+    <span>Start Date : {{course.start_date}} | Course Fee: {{course.course_fee | currency:'INR':'symbol'}}</span>
+    <br>
+    <br>
+    <p>
+        <span style="font-weight: bold;">Details:</span> {{course.course_name}} at Rockford University. Check program details, eligibility, fee structure and scholarships at the {{course.department_name}}
+    </p>
+</div>
