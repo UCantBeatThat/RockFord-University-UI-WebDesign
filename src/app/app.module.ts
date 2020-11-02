@@ -12,6 +12,7 @@ import { ContactComponent } from './contact.component';
 import { CommonModule } from '@angular/common';
 import { AgmCoreModule } from '@agm/core';
 import { HttpClientModule } from '@angular/common/http';
+import { AdmissionsComponent } from './admissions.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
     NewsletterComponent,
     ProgramsComponent,
     FacultyComponent,
+    AdmissionsComponent,
     ContactComponent
   ],
   imports: [
